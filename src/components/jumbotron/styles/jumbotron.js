@@ -22,12 +22,19 @@ export const Inner = styled.div`
   }
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  @media (max-width: 1100px) {
+    ${Item}:last-of-type h2 {
+      margin-bottom: 50px;
+    }
+  }
+`;
 
 export const Pane = styled.div`
   width: 50%;
+  object-position: center;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     width: 100%;
     padding: 0 45px;
     text-align: center;
