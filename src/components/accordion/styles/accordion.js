@@ -4,10 +4,12 @@ export const Container = styled.div`
   display: flex;
   border-bottom: 8px solid #222;
 `;
+
 export const Inner = styled.div`
   display: flex;
   padding: 70px 45px;
   flex-direction: column;
+  /* align-items: center; */
   max-width: 815px;
   margin: auto;
 `;
@@ -31,11 +33,20 @@ export const Title = styled.h1`
 
 export const Item = styled.div`
   color: white;
+  margin: auto;
   margin-bottom: 10px;
-  max-width: 670px;
+  min-width: 670px;
 
   &:first-of-type {
     margin-top: 3em;
+  }
+
+  @media (max-width: 1000px) {
+    min-width: 550px;
+  }
+
+  @media (max-width: 600px) {
+    min-width: 300px;
   }
 `;
 
