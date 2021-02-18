@@ -9,7 +9,6 @@ export const Inner = styled.div`
   display: flex;
   padding: 70px 45px;
   flex-direction: column;
-  /* align-items: center; */
   max-width: 815px;
   margin: auto;
 `;
@@ -35,21 +34,11 @@ export const Item = styled.div`
   color: white;
   margin: auto;
   margin-bottom: 10px;
-  width: 670px;
+  max-width: 670px;
+  width: 100%;
 
   &:first-of-type {
     margin-top: 3em;
-  }
-
-  /* @media (max-width: 1000px) {
-    width: 550px;
-  } */
-  @media (max-width: 768px) {
-    width: 500px;
-  }
-
-  @media (max-width: 600px) {
-    width: 400px;
   }
 `;
 
